@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: appsmith
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_USERNAME/appsmith
+    branch: deploy-branch
+    dockerfilePath: deploy/docker/Dockerfile
+    envVars:
+      - key: BASE
+        value: appsmith/appsmith-ce:release
